@@ -7,7 +7,7 @@ class GFButton extends StatefulWidget {
   final Color color;
   final VoidCallback onPressed;
 
-  GFButton(Key key, this.text, this.color, this.onPressed) : super(key: key);
+  GFButton({Key key, this.text, this.color, this.onPressed}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
