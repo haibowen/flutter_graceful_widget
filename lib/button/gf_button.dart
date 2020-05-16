@@ -20,10 +20,21 @@ class GFButtonState extends State<GFButton> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return RaisedButton(
-      color: widget.color ?? Colors.lightBlue,
-      child: Text(widget.text ?? '按钮'),
-      onPressed: widget.onPressed,
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [Colors.purple,Colors.lightBlue]),
+            borderRadius: BorderRadius.all(Radius.circular(10))
+      ),
+      child: RaisedButton(
+       /// color: widget.color ?? Colors.lightBlue,
+        child: Text(
+          widget.text ?? '按钮',
+          style: TextStyle(color: Colors.white),
+        ),
+        onPressed: widget.onPressed,
+      ),
     );
   }
 }
+
+

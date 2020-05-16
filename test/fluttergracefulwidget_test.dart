@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_graceful_widget/flutter_graceful_widget.dart';
 
-import 'package:fluttergracefulwidget/fluttergracefulwidget.dart';
 
 void main() {
   test('adds one to input values', () {
